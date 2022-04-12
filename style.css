@@ -1,0 +1,340 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: bisque;
+    margin: 0% 0%;
+}
+
+/*RESPONSIVE*/
+/***********MOBILE************/
+
+@media screen and (max-width: 479px) {
+    
+
+/*MOBILE-GRIDS*/
+
+
+#grid{
+    display: grid;
+    grid-template-areas: "head" "side" "main" "foot";
+    grid-row-gap: 15px;
+}
+
+header{
+    grid-area: head;
+    background-color: rgb(42, 190, 22);
+
+}
+
+aside{
+    grid-area: side;
+    background-color: rgb(24, 126, 63);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(7, 87, 21);
+}
+
+footer{
+    grid-area: foot; background-color: rgb(16, 255, 16);
+}
+
+/*MOBILE-header&menu*/
+
+header{
+    text-align: center;
+    padding: 10px 20px;
+}
+.menu-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+nav ul span {
+    padding: 10px 15px;
+    margin: 5px 10px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*MOBILE-columna lateral*/
+
+.aside-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10PX 10PX;
+    justify-content: space-evenly;
+
+}
+
+aside h2{
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid 3px black;
+    background-color: rgb(255, 208, 0);
+}
+
+aside div{
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid 3px black;
+    background-color: rgb(255, 151, 65);
+}
+
+/*MOBILE-main*/
+
+main{
+    padding: 15px 15px;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 8fr 8fr;
+    grid-template-rows:  8fr 8fr 8fr 8fr 8fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.article-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 3px solid black;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+/*MOBILE-footer*/
+
+footer{
+    text-align: center;
+}
+
+}
+
+/************TABLET**********/
+
+@media screen and (max-width: 1023px) and (min-width: 480px) {
+    
+/*TABLET-GRIDS*/
+
+#grid{
+    display: grid;
+    grid-template-areas: "head head" "side main" "foot foot";
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+header{
+    grid-area: head;
+    background-color: rgb(64, 149, 247);
+
+}
+
+aside{
+    grid-area: side;
+    background-color: rgb(38, 66, 143);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(22, 211, 195);
+}
+
+footer{
+    grid-area: foot; background-color: rgb(41, 173, 123);
+}
+
+/*TABLET-header&menu*/
+
+header{
+    text-align: center;
+    padding: 10px 20px;
+}
+.menu-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+nav ul span {
+    padding: 10px 15px;
+    margin: 5px 10px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*TABLET-columna lateral*/
+
+.aside-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10PX 10PX;
+    justify-content: space-evenly;
+
+}
+
+aside h2{
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid 3px black;
+    background-color: rgb(255, 208, 0);
+}
+
+aside div{
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid 3px black;
+    background-color: rgb(255, 151, 65);
+}
+
+/*TABLET-main*/
+
+main{
+    padding: 15px 15px;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 8fr 8fr;
+    grid-template-rows:  8fr 8fr 8fr 8fr 8fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.article-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 3px solid black;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+/*TABLET-footer*/
+
+footer{
+    text-align: center;
+}
+
+}
+
+/*************DESKTOP**************/
+
+@media screen and (min-width: 1024px) {
+    
+/*DESKTOP-GRIDS*/
+#grid{
+    display: grid;
+    grid-template-areas: "head head" "side main" "foot foot";
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+header{
+    grid-area: head;
+    background-color: rgb(235, 236, 146);
+
+}
+
+aside{
+    grid-area: side;
+    background-color: rgb(236, 248, 123);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(207, 154, 56);
+}
+
+footer{
+    grid-area: foot; background-color: rgb(179, 127, 84);
+}
+
+/*DESKTOP-header&menu*/
+
+header{
+    text-align: center;
+    padding: 10px 20px;
+}
+.menu-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+nav ul span {
+    padding: 10px 15px;
+    margin: 5px 10px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*DESKTOP-columna lateral*/
+
+.aside-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10PX 10PX;
+    justify-content: space-evenly;
+
+}
+
+aside h2{
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid 3px black;
+    background-color: rgb(255, 208, 0);
+}
+
+aside div{
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid 3px black;
+    background-color: rgb(255, 151, 65);
+}
+
+/*DESKTOP-main*/
+
+main{
+    padding: 15px 15px;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr;
+    grid-template-rows:  8fr 8fr 8fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.article-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 3px solid black;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+
+/*DESKTOP-footer*/
+
+footer{
+    text-align: center;
+}
+
+}
+
